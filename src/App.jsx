@@ -142,6 +142,7 @@ function App() {
             />
           );
         })}
+        <Billionaires />
       </div>
     </>
   );
