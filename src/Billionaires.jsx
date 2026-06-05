@@ -5,7 +5,6 @@ export default function Billionaires() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Дергаем реальный проверенный API, который возвращает 10 пользователей
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((data) => {
@@ -21,7 +20,7 @@ export default function Billionaires() {
   if (loading) return <p>Загрузка рейтинга миллиардеров...</p>;
 
   return (
-    <div style={{ padding: '15px', border: '1px solid #ccc', borderRadius: '8px', marginTop: '20px' }}>
+    <div style={{ padding: '15px', border: '1px solid #ccc', borderRadius: '8px', marginTop: '20px', backgroundColor: '#fff', color: '#000' }}>
       <h3>💰 Мировой рейтинг богатейших людей (Интеграция с внешним API)</h3>
       <ol>
         {people.map((person, index) => (
