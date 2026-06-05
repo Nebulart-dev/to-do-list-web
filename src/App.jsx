@@ -3,6 +3,7 @@ import './App.css';
 import ToDoForm from "./AddTask"; 
 import ToDo from "./Task"; 
 import axios from 'axios'; 
+import Billionaires from './Billionaires';
 
 const TASKS_STORAGE_KEY = 'tasks-list-project-web';
 const weatherApiKey = 'c7616da4b68205c2f3ae73df2c31d177';
